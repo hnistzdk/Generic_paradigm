@@ -1,0 +1,29 @@
+package Study.Generic_paradigm;
+
+import com.company.experiment1_3.Student;
+import com.company.experiment4.Person;
+
+import java.util.ArrayList;
+
+/**
+ * @Description
+ * @Author zdk
+ * @Date 2020/10/18 18:51
+ */
+
+public class Generic_transformation {
+    public static void main(String[] args)
+    {
+        ArrayList<Person> person=new ArrayList<>();
+        ArrayList<Student> student=new ArrayList<>();
+        //对子类转父类的理解应该是 要想使该等式成立 student得从Student类转为Person类
+
+        /**person应该可以加入子类teacher类型的数据，若转换成功，实际上person变成了指向student的引用
+        而student类和teacher类是无法互相转换的
+        //person=student;//子类泛型无法转换为父类泛型
+
+         如果person里面放着一个teacher类型对象，取出来就变成了student类 同上 无法转换
+        student=person;//父类泛型也无法转换为子类泛型
+         */
+    }
+}
